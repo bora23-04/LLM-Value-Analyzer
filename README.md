@@ -1,6 +1,7 @@
 # LLM-Value-Analyzer
 A data analysis project to help businesses choose the right Large Language Model (LLM) for their needs and budget.
 
+Demo: https://llm-value-analyzer-fc4vjkxd7qzet5ztw2otha.streamlit.app/
 ### 1. The Problem
 Companies are spending millions on AI but often choose models based on hype rather than data. Choosing the wrong model means wasting money on overpowered tools or getting poor results from underpowered ones.
 My goal was to answer the key business question: "For any given task, which LLM provides the best balance of performance, speed, and cost?"
