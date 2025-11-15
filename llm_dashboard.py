@@ -47,7 +47,7 @@ if df_full is None:
     st.stop()
 
 # --- 3. SIDEBAR FILTERS ---
-st.sidebar.title("🤖 LLM Dashboard Filters")
+st.sidebar.title("LLM Dashboard Filters")
 
 # --- Provider and Model Type Filters ---
 all_providers = sorted(df_full['Provider'].unique())
@@ -155,13 +155,13 @@ if df.empty:
     st.stop()  # Stop the script from running further
 
 # --- 4. MAIN PAGE TITLE & RECOMMENDATIONS ---
-st.title("🤖 LLM Cost-Benefit Analysis Dashboard")
+st.title("LLM Cost-Benefit Analysis Dashboard")
 st.markdown("""
 This dashboard answers the key business question: **"Which LLM provides the best balance of performance, speed, and cost?"**
 Use the filters on the left to narrow your search.
 """)
 
-st.header("🏆 Key Recommendations (Based on Filters)")
+st.header("Key Recommendations (Based on Filters)")
 
 # Calculate key metrics from the *filtered* data
 best_value_model = df.loc[df['performance_per_dollar'].idxmax()]
@@ -343,5 +343,6 @@ with st.expander("See all Exploratory Charts"):
 # --- 8. SHOW THE RAW DATA ---
 st.markdown("---")
 # This section shows the full, original, unfiltered dataset
-st.header("Full Project Dataset (with new 'Value' columns)")
+st.header("Full Project Dataset")
+
 st.dataframe(df_full)
